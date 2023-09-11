@@ -7,5 +7,11 @@
             "name": "Cyb3r R4ider"
         }
     ],
-    "require": {}
+    "require": {},
+    "autoload": {
+        "psr-4":{
+            "Framework\\":"src/Framework",
+            "App\\":"src/App"
+        }
+    }
 }
