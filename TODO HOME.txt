@@ -3,20 +3,21 @@ put in httpd-vhosts file:
 
 <VirtualHost *:80>
     ##ServerAdmin webmaster@dummy-host2.example.com
-    DocumentRoot "C:\xampp\htdocs\WalletWatcher\public"
+    DocumentRoot "C:/xampp/htdocs/WalletWatcher/public"
     ServerName walletwatcher.local
     ##ErrorLog "logs/dummy-host2.example.com-error.log"
     ##CustomLog "logs/dummy-host2.example.com-access.log" common
 	
-	<Directory "C:\xampp\htdocs\WalletWatcher\public">
-	RewriteEngine On
+	<Directory "C:/xampp/htdocs/WalletWatcher/public">
+		RewriteEngine On
 	
-	RewriteCond %{REQUEST_FILENAME} !-d
-	RewriteCond %{REQUEST_FILENAME} !-f
+		RewriteCond %{REQUEST_FILENAME} !-d
+		RewriteCond %{REQUEST_FILENAME} !-f
 	
-	RewriteRule ^ /index.php[]
+		RewriteRule ^ /index.php[L]
 	
 	</Directory>
+	
 </VirtualHost>
 
 
