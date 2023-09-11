@@ -1,0 +1,11 @@
+{
+    "name": "dev10/wallet-watcher",
+    "description": "A PHP App for tracking expenses",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Cyb3r R4ider"
+        }
+    ],
+    "require": {}
+}
